@@ -63,10 +63,10 @@
 
 
 @font-face {
-	font-family: 'CoreSansC-75';
+	font-family: 'CoreSansC-800';
 	src:
-		url("..//fonts/CoreSansC-75.woff2") format("woff2"),
-		url("..//fonts/CoreSansC-75.woff") format("woff");
+		url("..//fonts/CoreSansC-85Heavy.woff2") format("woff2"),
+		url("..//fonts/CoreSansC-85Heavy.woff") format("woff");
 	wont-weight: 800;
 	font-style: normal;
 	font-display: swap;
