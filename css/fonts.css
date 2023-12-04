@@ -1,0 +1,73 @@
+/* Підкдючення шрифтів */
+@import url('https://fonts.googleapis.com/css?family=Inter:400,800&display=swap'); 
+/*@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:400&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:600,700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap'); */
+/*@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800&display=swap');
+
+/* ======Підключення вручну======= */
+/* Шрифт № 1 */
+@font-face {
+	font-family: 'causten-medium';
+	src:
+		url("..//fonts/causten-medium.woff2") format("woff2"),
+		url("..//fonts/causten-medium.woff") format("woff");
+	wont-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Causten-Semi-Bold';
+	src:
+		url("..//fonts/Causten-Semi-Bold.woff2") format("woff2"),
+		url("..//fonts/Causten-Semi-Bold.woff") format("woff");
+	wont-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Causten-Bold';
+	src:
+		url("..//fonts/Causten-Bold.woff2") format("woff2"),
+		url("..//fonts/Causten-Bold.woff") format("woff");
+	wont-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* Шрифт № 2 */
+
+@font-face {
+	font-family: 'CoreSansC-500';
+	src:
+		url("..//fonts/CoreSansC-55Medium.woff2") format("woff2"),
+		url("..//fonts/CoreSansC-55Medium.woff") format("woff");
+	wont-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CoreSansC';
+	src:
+		url("..//fonts/CoreSansC-65Bold.woff2") format("woff2"),
+		url("..//fonts/CoreSansC-65Bold.woff") format("woff");
+	wont-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'CoreSansC-75';
+	src:
+		url("..//fonts/CoreSansC-75.woff2") format("woff2"),
+		url("..//fonts/CoreSansC-75.woff") format("woff");
+	wont-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}

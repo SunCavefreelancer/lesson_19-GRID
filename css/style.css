@@ -1,0 +1,284 @@
+/*=======Підключення шрифтів=======*/
+@import url("fonts.css");
+
+/*=======Скидання стилів=======*/
+@import url("reset.css");
+
+
+
+
+body {
+	font-family: 'Inter', sans-serif;
+	color: #6d6d6d;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;			/* прижимаем футер книзу */
+	flex-direction: column;/* прижимаем футер книзу */
+	
+}
+
+.wrapper > main {
+	flex-grow: 1;		/* прижимаем футер книзу */
+}
+
+/* для усіх "__container" однаково */
+[class*="__container"] {
+	max-width: 1370px;
+	/* 1340 + 15 + 15 */
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+
+
+
+/* ---header---- */
+/* .header {} */
+
+
+/* ------main------- */
+.page-1 {
+	padding: 80px 0px 80px 0px;
+}
+
+/* заголовок */
+.page-1__title::before {
+	content: "";
+	background-color: #8A33FD;
+	border-radius: 10px;
+	width: 6px;
+	height: 28px;
+	flex: 0 0 6px;
+}
+.page-1__title {
+	color: #3C4242;
+	font-family: 'CoreSansC';
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 33.5px; /* 119.643% */
+	letter-spacing: 0.56px;
+
+	display: flex;
+	gap: 27px;
+}
+.page-1__title:not(:last-child){
+	margin-bottom: 30px;
+}
+
+/* cards */		/* спочатку малюємо ячейки (комірки) */
+.page-1__cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+	column-gap: 37px;
+	row-gap: 50px;
+}
+
+/* card */
+/* .page-1__card {} */
+
+/* card */
+.card {
+	position: relative;
+}
+
+
+/* <!-- foto в <a> --> */
+.card__link-image {
+	display: block;	
+	
+	transform: scale(1.001);
+	transition: 0.4s;
+}
+.card__link-image:hover {
+	transform: scale(1.1);
+}
+
+/* саме foto */
+.card__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 282 /370;/* розміри фото ШИРИНА / ВИСОТА */
+	border-radius: 12px;
+}
+
+.card__link-image:not(:last-child){
+	margin-bottom: 30px;
+}
+
+
+/* icon */
+.card__icon {
+	content: "";
+	background-image: url(../img/icon01.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	font-size: 14px;
+	color: #3C4242;
+
+	position: absolute;	/* позіціонуємо іконку */
+	z-index: 2;
+	top: 26px;
+	right: 20px;
+
+	transform: scale(1.001);
+	transition: 0.4s;
+}
+.card__icon:hover {
+	transform: scale(1.1);
+}
+
+
+
+/* <!-- text під карткою --> */
+.card__down {
+	display: flex;
+}
+
+.card__content {
+	flex: 1 1 auto; /* 		зробили текст на всю ширину до цiни */
+}
+.card__content > *:last-child {
+	margin-bottom: 0;
+}
+
+.card__link-title {
+	color: #3C4242;
+	font-family: 'Causten-Semi-Bold';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.18;
+	margin-bottom: 5px;
+	display: block;
+
+	transition: 0.4s;
+}
+.card__link-title:hover {
+	color: red;
+}
+
+.card__text {
+	color: #807D7E;
+	font-family: 'causten-medium';
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+
+/* <!-- ціна --> */
+.card__price {
+	border-radius: 8px;
+	background-color: #F6F6F6;
+	color: #3C4242;
+	text-align: center;
+	font-family: 'Causten-Bold';
+	font-size: 14px;
+	font-weight: 700;
+	line-height: normal;
+	padding: 10px 20px;
+
+	transition: 0.5s;
+}
+.card__price:hover {
+	background-color: red;
+	color: #F6F6F6;
+}
+
+
+
+
+/* ---------------------------------page-2------------------------------------ */
+.page-2 {
+	padding: 130px 0px 100px 0px;
+}
+
+.page-2__container {
+	max-width: 1270px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+/* cards */		/* спочатку малюємо ячейки (комірки) */
+.page-2__cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	gap: 30px;
+}
+
+.page-2__card {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 650 / 356;
+	object-fit: cover;
+	border-radius: 12px;
+
+	background-image: url(../img/unsplash_01.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.page-2__text {
+	padding: 67px 0px 80px 28px;
+}
+.page-2__text > *:last-child {
+	margin-bottom: 0;
+}
+.page-2__name {
+	color: #fff;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 30.067px; /* 167.038% */
+	letter-spacing: 0.251px;
+	margin-bottom: 25px;
+}
+
+.page-2__title {
+	color: #fff;
+	font-family: 'CoreSansC-75';
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 45.1px; /* 132.648% */
+	margin-bottom: 10px;
+}
+
+/* <a> */
+.off {
+	color: #fff;
+	font-family: 'CoreSansC-500';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 25.056px; /* 156.598% */
+	letter-spacing: 0.251px;
+	margin-bottom: 41px;
+	display: inline-block;
+}
+
+.page-2__explore {
+	color: #fff;
+	font-family: 'CoreSansC-75';
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 30.132px;
+	text-decoration-line: underline;
+}
+
+
+.page-2__card--2 {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 650 / 356;
+	object-fit: cover;
+	border-radius: 12px;
+
+	background-image: url(../img/unsplash_02.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
