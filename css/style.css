@@ -389,6 +389,11 @@ body {
 	padding: 94px 0px 50px 0px;
 }
 
+
+.page-4__title:not(:last-child) {
+		margin-bottom: 70px;
+}
+
 .page-4__title {
 	color: #3C4242;
 	font-family: 'CoreSansC';
@@ -396,11 +401,11 @@ body {
 	font-weight: 600;
 	line-height: 33.5px;
 	letter-spacing: 0.68px;
-	margin-bottom: 70px;
 
 	display: flex;
 	gap: 20px;
 }
+
 .page-4__title::before {
 	content: '';
 	width: 6px;
@@ -411,42 +416,34 @@ body {
 }
 
 
-/* ---cards----- */
+/* cards */
 .page-4__cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	gap: 20px;
 }
 
-/* ---card----- */
-.page-4__card {
-	width: 100%;
-	height: 100%;
-	aspect-ratio: 400 / 393;
-	object-fit: cover;
 
-	position: relative;
+
+.page-4__card {	
+
 }
-
-/* ---модифікатор--- */
 .page-4__card--1 {
-	content: '';
-	background-image: url(../img/Rectangle\ 01.webp);
-	background-repeat: no-repeat;
+	content: "";
+	background-image: url(../img/Rectangle_01.webp);
 	background-position: 0 0;
+	background-repeat: no-repeat;
 	background-size: cover;
+/* 	aspect-ratio: 400 / 393; */
 	border-radius: 12px;
 }
-
 
 .page-4__content > *:last-child {
 	margin-bottom: 0;
 }
 .page-4__content {
-	max-width: 147px;
-	position: absolute;
-	top: 64px;
-	left: 20px;
+	max-width: 190px; /* 147px + 20px+20px;*/
+	padding: 64px 20px 64px 20px;
 }
 .page-4__title-name {
 	color: #FFF;
@@ -457,7 +454,6 @@ body {
 	letter-spacing: 0.56px;
 	margin-bottom: 9.5px;
 }
-
 .page-4__sub-title {
 	color: #FFF;
 	font-family: 'Causten-Semi-Bold';
@@ -465,38 +461,40 @@ body {
 	font-weight: 600;
 	margin-bottom: 10px;
 }
-
 .page-4__off {
 	color: #FFF;
 	font-family: 'Causten-Bold';
 	font-size: 18px;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
 }
 
-
-/* img */
+/* стрелка  <a>*/
 .page-4__link-image {
-	margin-bottom: 40px;
+	margin-bottom: 74px;
 	display: block;
-	text-align: center;
 
-	transition: 0.4s;
-	transform: scale(1.001);
-
+	display: flex;
+	justify-content: center;
 }
-.page-4__link-image:hover {
-	transform: scale(1.1);	
-	filter: drop-shadow(15px 15px 4px #3C4242);
-}
-/* саме фото */
+/* стрелка саме фото*/
 .page-4__image {
+	width: 23px;
+	height: 20px;
 
+	transition: 0.5s;
+	transform: scale(1.001);
 }
 
-/* ----button---- */
+.page-4__link-image:hover {
+	filter: drop-shadow(5px 0px 5px #000);
+	transform: scale(0.9);
+}
+
+
+/* button */
 .page-4__button {
-	padding:  8px 16px;
+	padding: 8px 16px;
 	color: #FFF;
 	text-align: center;
 	font-family: 'causten-medium';
@@ -504,74 +502,55 @@ body {
 	font-weight: 500;
 	border-radius: 4px;
 	border: 1px solid #FFF;
-	margin-bottom: 20px;
-	display: inline-block;
-	
-	transition: 0.4s;
-	transform: scale(1.001);
+	margin-bottom: 10px;
+
+	transition: 0.5s;
 }
 
 .page-4__button:hover {
-	transform: scale(1.1);	
-filter: drop-shadow(15px 15px 4px #3C4242);
+	filter: drop-shadow(5px 0px 5px #000);
 }
 
 
-/* ---модифікатор-2-- */
+/* card 2 */
 .page-4__card--2 {
-	content: '';
-	background-image: url(../img/Rectangle\ 02.webp);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: cover;
-	border-radius: 12px;
-	text-align: right;
 }
 .page-4__content--2 {
-	max-width: 153px;
-	position: absolute;
-	top: 34px;
-	left: 222px;
 }
 .page-4__button--2 {
-	border-radius: 4px;
-	background-color: #3C4242;
-	color: #FFF;
-	text-align: center;
-	font-family: 'Causten-Bold';
-	font-size: 12px;
-	font-weight: 700;
-	border: none;
 }
 
 
-/* ---модифікатор-3-- */
-.page-4__content--3 {
-	max-width: 156px;
-	position: absolute;
-	top: 65px;
-	left: 227px;
-
-}
-
+/* card 3 */
 .page-4__card--3 {
-	content: '';
-	background-image: url(../img/Rectangle\ 03.webp);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: cover;
-	border-radius: 12px;
-	text-align: right;
+}
+.page-4__content--3 {
+}
+.page-4__title-name--3 {
+}
+.page-4__sub-title--3 {
+}
+.page-4__off--3 {
 }
 .page-4__button--3 {
-	border-radius: 4px;
-	border: 1px solid #3C4242;
-	color: #3C4242;
-	text-align: center;
-	font-family: 'causten-medium';
-	font-size: 12px;
-	font-weight: 500;
 }
-.page-4__title-name--3, .page-4__sub-title--3, .page-4__off--3 {
-		color: #3C4242;
+
+
+/* card 4 */
+.page-4__card--4 {
+}
+.page-4__content--4 {
+}
+.page-4__title-name--4 {
+}
+.page-4__sub-title--4 {
+}
+.page-4__off--4 {
+}
+.page-4__button--4 {
+}
+
+
+/* card 5 */
+.page-4__card--5 {
 }
