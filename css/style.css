@@ -472,7 +472,7 @@ body {
 /* стрелка  <a>*/
 .page-4__link-image {
 	margin-bottom: 74px;
-	display: block;
+
 
 	display: flex;
 	justify-content: center;
@@ -482,13 +482,14 @@ body {
 	width: 23px;
 	height: 20px;
 
-	transition: 0.5s;
 	transform: scale(1.001);
+	transition: 0.5s;
+
 }
 
 .page-4__link-image:hover {
-	filter: drop-shadow(5px 0px 5px #000);
-	transform: scale(0.9);
+	filter: drop-shadow(10px 10px 5px #000);
+	transform: scale(1.2);
 }
 
 
@@ -503,28 +504,54 @@ body {
 	border-radius: 4px;
 	border: 1px solid #FFF;
 	margin-bottom: 10px;
+	display: inline-block;
 
+	transform: scale(1.001);
 	transition: 0.5s;
 }
 
 .page-4__button:hover {
-	filter: drop-shadow(5px 0px 5px #000);
+	filter: drop-shadow(10px 10px 5px #000);
+	transform: scale(1.1);
 }
+
+
 
 
 /* card 2 */
 .page-4__card--2 {
+	content: "";
+	background-image: url(../img/Rectangle_02.webp);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* 	aspect-ratio: 400 / 393; */
+	border-radius: 12px;
 }
 .page-4__content--2 {
+	max-width: 203px; /* 153px+ 25px+25px */
+	padding: 34px 25px 41px 25px;
+
+	justify-content: flex-end;
+	text-align: right;
 }
 .page-4__button--2 {
+	color: #FFF;
+	text-align: center;
+	font-family: 'Causten-Bold';
+	font-size: 12px;
+	font-weight: 700;
+	border-radius: 4px;
+	background: #3C4242;
 }
+
 
 
 /* card 3 */
 .page-4__card--3 {
 }
 .page-4__content--3 {
+
 }
 .page-4__title-name--3 {
 }
